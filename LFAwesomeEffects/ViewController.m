@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "AlipayHomeViewController.h"
 #import "DonYinViewController.h"
+#import "WebViewController.h"
 
 
 
@@ -27,7 +28,7 @@ static  NSString* const systemCellId = @"UITableViewCell";
 
 - (NSMutableArray *)dataArr {
     if (!_dataArr) {
-        _dataArr = [NSMutableArray arrayWithObjects:@"支付宝首页滚动效果",@"抖音加载动画效果", nil];
+        _dataArr = [NSMutableArray arrayWithObjects:@"支付宝首页滚动效果",@"抖音加载动画效果",@"假的网页加载进度条", nil];
     }
     return _dataArr;
 }
@@ -71,6 +72,11 @@ static  NSString* const systemCellId = @"UITableViewCell";
         case 1: {
             DonYinViewController *donYinVC = [DonYinViewController new];
             [self.navigationController pushViewController:donYinVC animated:YES];
+            break;
+        }
+        case 2: {
+            WebViewController *webVC = [WebViewController new];
+            [self.navigationController pushViewController:webVC animated:YES];
             break;
         }
         default:

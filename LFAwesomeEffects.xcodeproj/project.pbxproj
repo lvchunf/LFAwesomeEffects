@@ -14,6 +14,8 @@
 		FD065CCF2315640000706C8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD065CCD2315640000706C8A /* LaunchScreen.storyboard */; };
 		FD065CDC2315640000706C8A /* LFAwesomeEffectsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD065CDB2315640000706C8A /* LFAwesomeEffectsTests.m */; };
 		FD065CE72315640000706C8A /* LFAwesomeEffectsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD065CE62315640000706C8A /* LFAwesomeEffectsUITests.m */; };
+		FD15A873231A1DB000E5DF32 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD15A872231A1DB000E5DF32 /* WebViewController.m */; };
+		FD15A876231A1E2800E5DF32 /* WebviewProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FD15A875231A1E2800E5DF32 /* WebviewProgressLayer.m */; };
 		FDCE0DAE2316259700DCDB39 /* AlipayHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCE0DAD2316259700DCDB39 /* AlipayHomeViewController.m */; };
 		FDCE0DBD2316274300DCDB39 /* UIButton+LXMImagePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCE0DBB2316274300DCDB39 /* UIButton+LXMImagePosition.m */; };
 		FDCE0DC023162ABB00DCDB39 /* AlipayHomeHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCE0DBF23162ABB00DCDB39 /* AlipayHomeHeadView.m */; };
@@ -59,6 +61,10 @@
 		FD065CE22315640000706C8A /* LFAwesomeEffectsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LFAwesomeEffectsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD065CE62315640000706C8A /* LFAwesomeEffectsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFAwesomeEffectsUITests.m; sourceTree = "<group>"; };
 		FD065CE82315640000706C8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD15A871231A1DB000E5DF32 /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		FD15A872231A1DB000E5DF32 /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		FD15A874231A1E2800E5DF32 /* WebviewProgressLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebviewProgressLayer.h; sourceTree = "<group>"; };
+		FD15A875231A1E2800E5DF32 /* WebviewProgressLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebviewProgressLayer.m; sourceTree = "<group>"; };
 		FDCE0DAC2316259700DCDB39 /* AlipayHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlipayHomeViewController.h; sourceTree = "<group>"; };
 		FDCE0DAD2316259700DCDB39 /* AlipayHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlipayHomeViewController.m; sourceTree = "<group>"; };
 		FDCE0DB92316274300DCDB39 /* UIButton+LXMImagePosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+LXMImagePosition.h"; sourceTree = "<group>"; };
@@ -150,6 +156,7 @@
 			children = (
 				FD065CC5231563FE00706C8A /* ViewController.h */,
 				FD065CC6231563FE00706C8A /* ViewController.m */,
+				FD15A870231A1D7F00E5DF32 /* WebViewProgress */,
 				FDCE0E062316571C00DCDB39 /* DouYinLoadingAnimationEffect */,
 				FDCE0DAB2316258600DCDB39 /* AlipayHomeScrollEffect */,
 				FDCE0DC423162F1E00DCDB39 /* Category */,
@@ -177,6 +184,17 @@
 				FD065CE82315640000706C8A /* Info.plist */,
 			);
 			path = LFAwesomeEffectsUITests;
+			sourceTree = "<group>";
+		};
+		FD15A870231A1D7F00E5DF32 /* WebViewProgress */ = {
+			isa = PBXGroup;
+			children = (
+				FD15A871231A1DB000E5DF32 /* WebViewController.h */,
+				FD15A872231A1DB000E5DF32 /* WebViewController.m */,
+				FD15A874231A1E2800E5DF32 /* WebviewProgressLayer.h */,
+				FD15A875231A1E2800E5DF32 /* WebviewProgressLayer.m */,
+			);
+			path = WebViewProgress;
 			sourceTree = "<group>";
 		};
 		FDCE0DAB2316258600DCDB39 /* AlipayHomeScrollEffect */ = {
@@ -408,7 +426,9 @@
 			files = (
 				FDCE0E052316339000DCDB39 /* AppDelegate.m in Sources */,
 				FDCE0E042316339000DCDB39 /* main.m in Sources */,
+				FD15A873231A1DB000E5DF32 /* WebViewController.m in Sources */,
 				FDCE0DF323162F6900DCDB39 /* UIView+Extension.m in Sources */,
+				FD15A876231A1E2800E5DF32 /* WebviewProgressLayer.m in Sources */,
 				FD065CC7231563FE00706C8A /* ViewController.m in Sources */,
 				FDCE0DAE2316259700DCDB39 /* AlipayHomeViewController.m in Sources */,
 				FDCE0DC023162ABB00DCDB39 /* AlipayHomeHeadView.m in Sources */,
